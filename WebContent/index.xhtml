@@ -1,0 +1,147 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:h="http://java.sun.com/jsf/html"
+    xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:p="http://primefaces.prime.com.tr/ui">
+
+<h:head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <style type="text/css">
+		
+		body {
+ 		   	font-family: Tahoma,Verdana,Arial,sans-serif;
+    		font-size: 8pt;
+    		font-style: normal;
+    		font-weight: normal;
+    	}
+			.ui-widget {
+				font-size: 10px !important;
+				font-family: verdana,serif;
+			}
+			
+			.ui-widget-content a {
+    color: #222222;
+}
+.ui-widget-header {
+    background: url("#{request.contextPath}/javax.faces.resource/images/ui-bg_gloss-wave_55_5c9ccc_500x100.png") repeat-x scroll 50% 50% #5C9CCC;
+    border: 1px solid #4297D7;
+    color: #FFFFFF;
+    font-weight: bold;
+}
+.ui-widget-header a {
+    color: #FFFFFF;
+}
+			.ui-widget-content {
+    			background: url("#{request.contextPath}/javax.faces.resource/images/ui-bg_glass_85_dfeffc_1x400.png.xhtml?ln=primefaces-redmond") repeat-x scroll 50% bottom #DFEFFC;
+    			border: 1px solid #A6C9E2;
+    			color: #2E6E9E;
+    			font-weight: bold; !important;
+			}
+			
+			.wijmo-wijmenu {
+    			padding: 0;
+    			position: relative;
+    			width: auto;
+			}
+			
+			.wijmo-wijmenu-horizontal .wijmo-wijmenu-link {
+ 			   padding: 0.1em 0.3em;
+    		   width: auto;
+			}
+			
+			.wijmo-wijmenu-list {
+			    background: url("#{request.contextPath}/javax.faces.resource/images/ui-bg_gloss-wave_55_5c9ccc_500x100.png") repeat-x scroll 50% 50% #FCFDFD;
+			}
+			
+			.wijmo-wijmenu .wijmo-wijmenu-link {
+ 				border: 1px solid transparent;
+    			display: block;
+    			float: left;
+    			font-weight: normal;
+    			line-height: 12px;
+    			outline: medium none;
+    			padding: 0.3em;
+    			text-decoration: none;
+    			width: 92%;
+			}
+			
+			wijmenu-child {
+    			display: none;
+    			padding: 0.1em;
+    			width: 150px;
+			}
+			
+			.ui-menu .ui-menu-item .ui-menu-item-label {
+				padding: .2em 1.7em;
+			}
+			
+			.ui-growl {
+				top:115px;
+			}
+			
+			.ui-menubar {
+				position:absolute;
+				top:70px;
+				z-index:1000000;
+			} 
+			
+			.themeMenu {
+				overflow: auto;
+				height:300px;
+				width:200px;
+			}
+			
+			.ui-scrollable-datatable-container {
+				
+				line-height:15px;
+			}
+			
+			.ui-datatable .ui-datatable-header {
+                text-align: right;
+            }
+		
+			.pf-messages {
+				width:80%;
+			}
+			
+			.pf-notificationbar-container {
+				display:none;
+			}
+			
+			.ui-icon {
+				height:14px;
+				width:14px;
+			}
+			
+			.ui-button {
+				height:23px;
+			}
+			
+			.ui-growl-message .ui-dialog-content {
+				font-size: 12px !important;
+				font-family: tahoma,verdana,serif;
+			}
+		
+		</style>
+		<!--[if IE 7]>
+			<style type="text/css">
+				.ui-menu .ui-menu-item {
+					width:120px;
+				}
+				
+				.ui-menu-item-label .helptext {
+					margin:-1.5em 0 0 5em;
+				}
+			</style>
+		<![endif]-->
+</h:head>
+
+<h:body>
+<h:form id="frmPrueba">
+	<h:outputLabel value="#{menuUtilBean.nombreUsuario}" />
+	<h:outputLabel value="#{menuUtilBean.administrador}" />
+</h:form>
+</h:body>
+</html>
